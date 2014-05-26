@@ -1,0 +1,638 @@
+/******************************************************************************/
+/*  Page sections + Loading                                                      */
+/******************************************************************************/
+
+/*font and size of the body,including navigatino bar*/
+body {
+	font-family: 'Armata', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 25px;
+	color: #ffffff;
+}
+/*position the loading image when the page is loading */
+.doc-loader
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+/*position the loading image when the page is loading */
+.doc-loader td
+{
+    vertical-align: middle;
+    text-align: center;
+	background-color: #1f1f1f;
+}
+
+
+/*setting height and width of the background.*/
+.section
+{
+	width: 100%;
+	height: 100%;
+	
+}
+/*height of "Take Me Home" section*/
+#home {
+	height: 1100px;
+}
+/*height of the "Pictures" section */
+
+#games {
+	height: 900px;
+}
+#download {
+	height: 900px;
+}
+
+/******************************************************************************/
+/*  Typography                                                                  */
+/******************************************************************************/
+
+
+
+
+
+/******************************************************************************/
+/*  SUBHEADER                                                                 */
+/******************************************************************************/
+.subheader
+{
+	position: center;
+	margin-top: 70px;	
+	margin-left: 2em;
+	margin-right: 2em;
+	
+}
+
+.subheader-text
+{
+	display: inline-block;
+	font-family: 'TeXGyreAdventorBold', Arial, Helvetica, sans-serif;
+	font-size: 55px;
+	letter-spacing: -0.04em;
+	vertical-align: middle;
+	margin-bottom: 40px;
+	color: #858efd;
+	/*text-decoration: underline; */
+	outline-style: dashed;
+	width: 100%;
+}
+.subheader-text span 
+{
+	display: inline-block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 19px;
+	letter-spacing: -0.02em;	
+	color:white;
+}
+.separator
+{
+	height: 40px;
+	background: transparent url(../img.png) no-repeat;	
+}
+
+
+/******************************************************************************/
+/*  NAVIGATION                                                                */
+/******************************************************************************/
+
+/*place the navigation bar in a fixed position*/
+.navigation 
+{
+    position: fixed;
+    /*top:200px;*/
+    top: 80px; 
+	left: 0px;
+	z-index: 200;
+}
+
+/*position the navitagion_img.png */
+.navigation img
+{
+	margin-left: 10px;
+	margin-bottom: -20px;
+}
+/* position the RemaintGameStudio sign 
+since .navigation .mainPage has more specificity than .navigation img, 
+the .mainPage can be manipulated without affecting .navigation img
+*/
+.navigation #icon
+{
+	margin-right: 50%;
+	margin-top: -20em;
+	margin-bottom: 1em;
+	position: relative;
+
+}
+
+/*create gap between each navigation tab on the navigation bar */
+.navigation li 
+{
+ 	position: relative;
+    margin: 0 0 8px;
+    margin: 0 0 10%;
+    /*margin: 0 0 20px; */
+    /* font-family: fantasy;*/
+	font-family: 'Armata', Arial, Helvetica, sans-serif;
+	font-size: 18px;	
+}
+.navigation a 
+{
+	position: relative;
+	display: inline-block;
+	/* padding: 0.3em 0.5em 0.3em; */
+    padding: 0.5em .5em 0.5em;
+    text-decoration: none;
+	/*background-color: #ffffff;
+	color: #888887;*/
+	background-color: #cccccc;
+	color: #666666;
+	-moz-border-radius: 0 .4em .4em 0;  /* Firefox */
+	-webkit-border-radius: 0 .4em .4em 0; /* Safari, Chrome */
+	border-radius: 0 .4em .4em 0; /* CSS3 */
+	outline: none;
+	/*change cursor shape for navigation tab*/
+	cursor: pointer;
+}
+/* color the name of the tab red when it is clicked */
+.navigation a.nav-active
+{
+	background-color: #ffffff;
+	color:#FF0000;
+}
+/*change the color of the tab when mouse is entered */
+.navigation a:hover
+{
+	background-color: #ffffff;
+	/* color:#d82545; */
+	color: #FF0000;
+}
+
+/*length of the navigation tab*/
+.navigation span
+{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+/******************************************************************************/
+/*  BACKGROUND                                                                */
+/******************************************************************************/
+/*
+// a way to make the image resize as the browser resizes
+#img.source-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+*/
+
+
+/*sets up the background color of the main page */
+.mainpage
+{
+	/* background: #1f1f1f url(../images/RemaintIcon-opacity.png) repeat-x; */
+	background: #515151 url(../img/RemaintIcon-opacity2.png) repeat-x;
+	background-size: cover;
+	height: 1050px;
+	opacity: 1;
+
+}
+
+.about {
+	background-color: #515151 ;
+
+}
+/*background-color: #7a7a7a
+  background: #616161;
+  */
+
+.games {background-color:#515151;}
+.pictures {background-color: #515151;}
+.download {background-color: #515151;}
+.who-are-we {background-color: #515151;}
+.get-in-touch {background-color: #515151;}
+
+
+
+/******************************************************************************/
+/*  FOOTER                                                                    */
+/******************************************************************************/
+.footer
+{
+	width: 100%;
+    padding-top: 20px;
+    text-align: center;
+	color: #1e1e1e;   
+}
+
+/******************************************************************************/
+/*  MASK                                                                      */
+/******************************************************************************/
+
+.iosfix {
+  height: 101%;
+  overflow: hidden;
+}
+
+/******************************************************************************/
+/*  CONTENTS                                                              */
+/******************************************************************************/
+/* summary is the second part of the text on the page */
+.summary
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	font-style: italic;
+	line-height: 40px;
+	letter-spacing: -0.02em;
+}
+
+.clear
+{
+    clear: both;
+}
+
+/******************************************************************************/
+/* 2.About                                                                    */
+/******************************************************************************/
+
+.our-description
+{
+	float: left;
+    max-width: 400px;
+    margin-right: 8%;
+	margin-bottom: 2em;
+}
+#about .image-row{
+	float: left;
+
+
+}
+/******************************************************************************/
+/* 3.Games                                                                    */
+/******************************************************************************/
+
+
+
+
+
+
+/******************************************************************************/
+/* 4.pictures                                                                  */
+/******************************************************************************/
+
+/*creats highlights around the picture */
+.image-view {
+  display: inline-block;
+  margin: 0 10px 20px 10px;
+  line-height: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  /*border: 4px solid #5e5e5e; */
+  border: 4px solid #6c77fd;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+/*create box shadow when hover on the picture */
+.image-view:hover {
+  /*border: 4px solid #00bfa8; */
+  border:4px solid #535ffc;
+  -moz-box-shadow: 0 0 5px 5px #888;
+  -webkit-box-shadow: 0 0 5px 5px#888;
+  box-shadow: 0 0 5px 5px #888;
+  opacity: 0.7;
+}
+
+/******************************************************************************/
+/* 5.Download                                                                 */
+/******************************************************************************/
+
+
+/* -- Download -- */
+/* line 199, ../sass/screen.sass */
+.download-section {
+  text-align: center;
+}
+
+/* line 202, ../sass/screen.sass */
+.download-button {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #2b2b2b;
+  border: 4px solid #444444;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  *zoom: 1;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.download-button:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 213, ../sass/screen.sass */
+.download-button:hover {
+  /*border-color: #00bfa8; */
+  border-color: #535ffc;
+  background-color: #444444;
+}
+/* line 216, ../sass/screen.sass */
+.download-button .file {
+	margin-left: 2em;
+  font-size: 36px;
+  color: white;
+  line-height: 1em;
+}
+/* line 220, ../sass/screen.sass */
+.download-button .version {
+	margin-left: 28px;
+  font-size: 24px;
+  /*color: #00bfa8;*/
+  color: #6c77fd;
+}
+
+/* -- Sharing -- */
+/* line 226, ../sass/screen.sass */
+.sharing {
+  position: fixed;
+  top: 20px;
+  right: 0;
+}
+
+/* -- Donate -- */
+/* line 233, ../sass/screen.sass */
+.donate-button-form {
+  text-align: center;
+}
+
+/* line 235, ../sass/screen.sass */
+.donate-button {
+  border: 4px solid rgba(0, 0, 0, 0);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+/* line 239, ../sass/screen.sass */
+.donate-button:hover {
+  background-color: #444444;
+  /*border-color: #00bfa8; */
+  border-color:535ffc;
+}
+
+
+
+
+
+/******************************************************************************/
+/* 6. Our Team                                                             */
+/******************************************************************************/
+.socio {
+	max-width: 300px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.socio ul {
+	margin: 0 auto;
+	max-width: 131px;
+	line-height: normal;
+}
+.socio ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+.socio ul li a
+{	
+    display: block;
+    height: 37px;
+    width: 37px;
+}
+.socio ul li a:active
+{
+    background-position: left bottom;
+}
+.socio ul li a:hover 
+{
+	 background-position: left bottom;
+}
+a.socio_twitter {background: transparent url('../img/socio/contact_twitter_icon.png') no-repeat;}
+a.socio_facebook {background: transparent url('../img/socio/contact_facebook_icon.png') no-repeat;}
+
+.team-member-name
+{
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.team-member-description
+{
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.team-position
+{
+	float: left;
+    width: 300px;
+    margin-top: 55px;
+    margin-right: 40px;
+    margin-left: 60px;
+}
+
+/******************************************************************************/
+/* 7. Get in Touch                                                             */
+/******************************************************************************/
+.contact-me
+{
+  margin-right: 0em;
+    
+}
+.contact-form
+{
+	float: left;
+	
+    width: 420px;
+    margin-bottom: 2em;
+
+}
+.contact-form label
+{
+    display: block;
+    margin-bottom: 5px;
+	margin-left: 5px;
+	letter-spacing: -0.02em;
+	color: #b1b0b0;	
+}
+/*design the text area of "Name","e-mail"," subject" */ 
+.contact-form input[type=text]
+{	
+	position: relative;
+	display: block;
+	width: 300px;
+	height: 38px;
+    margin-bottom: 10px;
+	padding-left: 10px;
+	font-family: 'Armata', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+	line-height: 40px;
+  	background-color: #333333;
+	color: #b1b0b0; 
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */ 
+	border-radius: 5px; /* CSS3 */
+	border: none;
+	outline: none; 
+}
+/* design the text area of "message *" */
+.contact-form textarea
+{	
+	position: relative;
+    display: block;
+	width: 330px;
+    height: 140px;
+    margin-bottom: 11px;
+	padding: 10px 0 0 10px; 
+    overflow: auto;
+	font-family: 'Armata', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+	line-height: 40px;
+	background-color: #333333;
+	color: #b1b0b0;
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	border-radius: 5px; /* CSS3 */
+    border: none;
+	outline: none;
+}
+.submit-btn
+{
+	position: relative;
+	display: inline-block;
+    float: left;
+	margin-top: 10px;
+	padding: .4em 1em .45em;
+	font-family: 'Armata', Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	background-color: #5360fc;
+	color: white;
+	-moz-border-radius: .5em; /* Firefox */
+	-webkit-border-radius: .5em; /* Safari, Chrome */
+	border-radius: .5em; /* CSS3 */
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.submit-btn:hover
+{
+	text-decoration: none;
+	background-color: #3a48fc;
+}
+.mail-message-btn
+{
+	position: relative;
+	display: inline-block;
+	padding: .3em 1.8em .3em;
+	text-decoration: none;
+	background-color: #ac1f39;
+	color: #ffffff;
+	-moz-border-radius: .5em; /* Firefox */
+	-webkit-border-radius: .5em; /* Safari, Chrome */
+	border-radius: .5em; /* CSS3 */
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.mail-message-btn:hover
+{
+	text-decoration: none;
+	background-color: #b52540;
+}
+
+#mail-message
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 210;
+}
+#mail-message table
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#mail-message-window
+{
+    width: 400px;
+	padding-bottom: 20px;
+    border: solid 0px #ffffff;
+    background: #000000 url('../images/bg.png') repeat top left;
+	margin: 0 auto;
+}
+#mail-message-header
+{
+    width: 400px;
+    height: 70px;
+}
+.mail-message-success
+{
+    background: transparent url('../images/success.png') no-repeat top left;
+}
+.mail-message-error
+{
+    background: transparent url('../images/error.png') no-repeat top left;
+}
+#mail-message-window p
+{
+    margin: 0 0 5px 10px;
+    text-align: left;
+}
+#mail-message-window input
+{
+    margin-top: 10px;
+}
+#mail-message td
+{
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+

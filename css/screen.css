@@ -1,0 +1,196 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/*make sure when the page is loading the nagivation tab won't show */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*used to delete the bullets infront of the lists*/
+ol, ul {
+  list-style: none;
+}
+
+
+/* Typography
+ *----------------------------------------------- */
+/* line 10, ../sass/screen.sass */
+body,
+input,
+textarea {
+  /*color:#85fdb8;*/
+  color: #cccccc; 
+  /* color:5360fc;*/
+  font-size: 18px;
+  font-family: "Karla", "lucida grande", sans-serif;
+
+}
+
+/* line 17, ../sass/screen.sass */
+/* color the headers yellow */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+  color:#fdb885;
+  /*color: #fdf485; */
+  /*color:#858efd; */
+  /* color:#b885fd; */
+
+}
+
+/* line 26, ../sass/screen.sass */
+h1 {
+  font-size: 72px;
+  line-height: 1em;
+}
+
+/* line 30, ../sass/screen.sass */
+h2 {
+  font-size: 48px;
+  line-height: 1.2em;
+  margin-bottom: 0.3em;
+  font-family: delaney;
+}
+
+/* line 35, ../sass/screen.sass */
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color:#858efd;
+  /*color: #e5d404;  */
+  margin-bottom: 0.3em;
+}
+
+/* line 42, ../sass/screen.sass */
+h4 {
+  font-size: 18px;
+}
+
+/*create space between paragraphs */
+p {
+  line-height: 1.4em;
+  margin-bottom: 1em;
+}
+
+/* line 49, ../sass/screen.sass */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 52, ../sass/screen.sass */
+ul, ol {
+  margin: 0 0 1.25em 0;
+}
+
+/* line 55, ../sass/screen.sass */
+/* create a line between list items */
+li {
+  /*padding-bottom: 0.8em;
+  margin-bottom: 0.8em;
+  border-bottom: 2px solid #515151; */
+  line-height: 1.3em;
+}
+
+
+
+
+
+
+
+/* -- Layout ------------------------------------------------------------------ */
+
+/*set up the color of the background, the outline */
+body {
+  margin: 60px 60px 80px 60px;
+  /*margin: 40px 40px 80px 40px;*/
+  background: #373737 url(../img) repeat;
+  /*background: #444444;  */
+}
+
+/* line 128, ../sass/screen.sass */
+/*the width of the contents */
+.wrapper {
+  /*max-width: 740px; */
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* line 132, ../sass/screen.sass */
+/* draw black line between class name contains "section" */
+
+.section {
+  padding: 0 0 40px 0;
+  margin-bottom: 40px;
+  *zoom: 1;
+  border-bottom: 4px solid #373737;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 137, ../sass/screen.sass */
+.section.last {
+  border-bottom: none;
+}
+
+/* line 140, ../sass/screen.sass */
+.section-header {
+  text-align: center;
+}
+
+/* line 143, ../sass/screen.sass */
+.section-subheader {
+  margin-top: -0.6em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* line 149, ../sass/screen.sass */
+.row {
+  *zoom: 1;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -- Sections ------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
